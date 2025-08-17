@@ -22,10 +22,10 @@
   </head>
   <body class="max-w-[1600px] font-manrope">
     <!-- header -->
-    <header class="max-w-[1290px] mx-auto flex items-end justify-between mt-16">
+    <header class="w-[90vw] md:max-w-[1290px] mx-auto flex flex-col gap-5 md:flex-row items-end justify-between mt-16">
       <div class="basis-1/2 space-y-7">
         <h1
-          class="font-extrabold text-[#1C1C1C] text-[80px] font-manrope leading-tight"
+          class="font-extrabold text-[#1C1C1C] text-5xl md:text-[80px] font-manrope leading-tight"
         >
           It's good tea time at The Tea House
         </h1>
@@ -43,7 +43,7 @@
       <div class="basis-1/2 text-right relative">
         <img src="./images/banner.png" alt="" />
         <div
-          class="shadow flex items-center justify-start bg-white rounded-sm text-left gap-2 py-3 px-4 text-xl absolute bottom-8 left-25"
+          class="shadow flex items-center justify-start bg-white rounded-sm text-left gap-2 py-3 px-4 text-xl md:absolute bottom-8 left-25"
         >
           <i class="fa-solid fa-star text-4xl text-yellow-400"></i>
           <div>
@@ -55,7 +55,7 @@
     </header>
 
     <!-- main -->
-    <main class="max-w-[1140px] mx-auto">
+    <main class="w-[90vw] md:max-w-[1140px] mx-auto ">
       <!-- feature products -->
       <section class="mt-[130px]">
         <!-- title -->
@@ -72,7 +72,7 @@
         </div>
 
         <!-- products features  -->
-        <div class="grid grid-cols-4 gap-5 place-items-center mt-14">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center mt-14">
           <!-- item 1 -->
           <div
             class="max-w-[268px] p-8 rounded-lg bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f400] flex flex-col items-center justify-center gap-7"
@@ -125,7 +125,7 @@
       </section>
 
       <!-- great tea -->
-      <section class="flex gap-10 mt-[130px]">
+      <section class="flex flex-col md:flex-row gap-10 mt-[130px]">
         <div class="grid grid-cols-2 grid-rows-3 basis-1/2 gap-6">
           <div
             class="bg-gradient-to-r from-[rgba(230,165,35,0.1)] to-[#ff883800] rounded-lg"
@@ -185,7 +185,7 @@
 
       <!-- meet  -->
       <section
-        class="bg-gradient-to-l from-[#FF0000] to-[#FF8938] py-20 px-16 rounded-lg text-white flex gap-8 justify-between items-center mt-[130px]"
+        class="bg-gradient-to-l from-[#FF0000] to-[#FF8938] py-20 px-4 md:px-16 rounded-lg text-white flex flex-col md:flex-row gap-8 justify-between items-center mt-[130px]"
       >
         <div class="basis-[40%] relative">
           <h2
@@ -246,7 +246,7 @@
             />
           </div>
           <div
-            class="bg-white p-10 max-w-[433px] rounded-lg absolute top-[25%] -left-[25%]"
+            class="bg-white p-10 md:max-w-[433px] rounded-lg absolute top-[25%]  md:-left-[25%]"
           >
             <p class="font-medium text-[1rem] font-manrope text-[#777777] mb-5">
               We are providing the best and suitable home insurance services for
@@ -285,7 +285,7 @@
         </div>
 
         <!-- cards -->
-        <div class="flex items-center justify-between gap-4 mt-11">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 mt-11">
           <!-- card 1 -->
           <div
             class="p-5 border border-[#D2D2D2] bg-white space-y-5 max-w-[364px] rounded-xl"
@@ -374,20 +374,21 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer
       class="w-full py-32 bg-gradient-to-l from-[#ff000011] to-[rgba(255,136,56,0.1)] mt-[130px]"
     >
       <!-- footer section -->
-      <section class="max-w-[1140px] mx-auto text-white">
-        <div class="flex justify-between items-start">
-          <img src="./images/cup.png" alt="" />
-          <div class="flex items-center gap-10">
+      <section class="w-[90vw] md:max-w-[1140px] mx-auto text-white ">
+        <div class="flex flex-col gap-4 md:flex-row justify-center items-center md:justify-between ">
+          <img src="./images/cup.png" class="w-[62px] h-[65px]" alt="" />
+          <div class="flex flex-col md:flex-row  items-center gap-10">
             <p class="font-medium text-xl font-manrope text-[#494949]">Ready to get strated?</p>
             <button class="bg-gradient-to-l from-[#FF0000] to-[#FF8938] text-white py-3.5 px-6 rounded-lg cursor-pointer">Get Started</button>
           </div>
         </div>
           <!-- menu and media -->
-          <div class="flex flex-row justify-between mt-14">
+          <div class="flex flex-row flex-wrap gap-5 justify-between mt-14">
             <div class="flex flex-col space-y-5">
               <h6 class="font-semibold font-manrope text-xl text-[#1c1c1c] ">Quick Link</h6>
               <a href="#" class="font-normal font-manrope text-[1rem] text-[#494949]">Home</a>
